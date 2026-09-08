@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Leave Request</title>
+</head>
+
+<body>
+
+    <h1>Employee Leave Request Form</h1>
+
+    <p>
+        Employees can use this page to submit a leave request by providing
+        their personal details, leave dates, leave type and reason.
+    </p>
+
+    <hr>
+
+    <h2>Employee Details</h2>
+
+    <label for="employeeName">Employee Name:</label>
+    <br>
+    <textarea id="employeeName" name="employee_name" rows="1" cols="40"
+        minlength="3" maxlength="50"
+        placeholder="Enter employee name"></textarea>
+
+    <br><br>
+
+    <label for="employeeId">Employee ID:</label>
+    <br>
+    <textarea id="employeeId" name="employee_id" rows="1" cols="25"
+        minlength="4" maxlength="15"
+        placeholder="Enter employee ID"></textarea>
+
+    <br><br>
+
+    <label for="email">Email Address:</label>
+    <br>
+    <textarea id="email" name="email" rows="1" cols="40"
+        placeholder="Enter email address"></textarea>
+
+    <br><br>
+
+    <label for="department">Department:</label>
+    <br>
+    <select id="department" name="department">
+        <option value="">Select Department</option>
+        <option value="hr">Human Resources</option>
+        <option value="it">Information Technology</option>
+        <option value="finance">Finance</option>
+        <option value="marketing">Marketing</option>
+        <option value="sales">Sales</option>
+        <option value="operations">Operations</option>
+        <option value="admin">Administration</option>
+    </select>
+
+    <h2>Leave Details</h2>
+
+    <label for="leaveType">Leave Type:</label>
+    <br>
+    <select id="leaveType" name="leave_type">
+        <option value="">Select Leave Type</option>
+        <option value="casual">Casual Leave</option>
+        <option value="sick">Sick Leave</option>
+        <option value="earned">Earned Leave</option>
+        <option value="work_from_home">Work From Home</option>
+        <option value="other">Other</option>
+    </select>
+
+    <br><br>
+
+    <label for="startDate">Leave Start Date:</label>
+    <br>
+    <select id="startDate" name="start_date">
+        <option value="">Select Start Date</option>
+        <option value="2026-09-07">07 September 2026</option>
+        <option value="2026-09-08">08 September 2026</option>
+        <option value="2026-09-09">09 September 2026</option>
+        <option value="2026-09-10">10 September 2026</option>
+        <option value="2026-09-11">11 September 2026</option>
+    </select>
+
+    <br><br>
+
+    <label for="endDate">Leave End Date:</label>
+    <br>
+    <select id="endDate" name="end_date">
+        <option value="">Select End Date</option>
+        <option value="2026-09-07">07 September 2026</option>
+        <option value="2026-09-08">08 September 2026</option>
+        <option value="2026-09-09">09 September 2026</option>
+        <option value="2026-09-10">10 September 2026</option>
+        <option value="2026-09-11">11 September 2026</option>
+    </select>
+
+    <br><br>
+
+    <label for="leaveDays">Number of Leave Days:</label>
+    <br>
+    <select id="leaveDays" name="leave_days">
+        <option value="">Select Days</option>
+        <option value="1">1 Day</option>
+        <option value="2">2 Days</option>
+        <option value="3">3 Days</option>
+        <option value="4">4 Days</option>
+        <option value="5">5 Days</option>
+        <option value="6">6 Days</option>
+        <option value="7">7 Days</option>
+    </select>
+
+    <h2>Contact During Leave</h2>
+
+    <label for="reachable">Will you be reachable during leave?</label>
+    <br>
+    <select id="reachable" name="reachable">
+        <option value="">Select</option>
+        <option value="yes">Yes, I will be reachable</option>
+        <option value="no">No, I will not be reachable</option>
+    </select>
+
+    <br><br>
+
+    <label for="alternateContact">Alternate Contact Number:</label>
+    <br>
+    <textarea id="alternateContact" name="alternate_contact"
+        rows="1" cols="25" minlength="10" maxlength="10"
+        placeholder="Enter alternate contact number"></textarea>
+
+    <h2>Reason for Leave</h2>
+
+    <label for="reason">Leave Reason:</label>
+    <br>
+    <textarea id="reason" name="leave_reason"
+        rows="6" cols="55" minlength="10" maxlength="500"
+        placeholder="Enter the reason for your leave"></textarea>
+
+    <h2>Supporting Document</h2>
+
+    <p>Upload a supporting document if required:</p>
+
+    <button type="button">Choose Supporting Document</button>
+
+    <h2>Declaration</h2>
+
+    <p>
+        I confirm that the information provided in this leave request is
+        correct and complete.
+    </p>
+
+    <label for="declaration">Declaration:</label>
+    <br>
+    <select id="declaration" name="declaration">
+        <option value="">Select</option>
+        <option value="accepted">
+            I agree and confirm the information provided
+        </option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Submit Leave Request</button>
+    <button type="reset">Reset</button>
+
+    <hr>
+
+    <h2>Leave Categories</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Leave Category</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>Casual Leave</td>
+            <td>For personal or short-term requirements.</td>
+        </tr>
+
+        <tr>
+            <td>Sick Leave</td>
+            <td>For illness or medical reasons.</td>
+        </tr>
+
+        <tr>
+            <td>Earned Leave</td>
+            <td>Planned leave earned by the employee.</td>
+        </tr>
+
+        <tr>
+            <td>Work From Home</td>
+            <td>Permission to work remotely.</td>
+        </tr>
+
+        <tr>
+            <td>Other</td>
+            <td>For other approved leave requirements.</td>
+        </tr>
+    </table>
+
+</body>
+</html>

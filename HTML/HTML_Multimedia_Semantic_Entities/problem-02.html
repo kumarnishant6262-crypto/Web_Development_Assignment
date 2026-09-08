@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corporate Careers & Recruitment Hub</title>
+</head>
+<body>
+<header>
+    <h1>TechNova Careers & Recruitment Hub</h1>
+    <p>Build your future with a technology company focused on innovation.</p>
+    <nav>
+        <a href="#jobs">Jobs</a> | <a href="#culture">Culture</a> |
+        <a href="#stages">Hiring Stages</a> | <a href="#apply">Apply</a>
+    </nav>
+</header>
+
+<main>
+<section id="culture">
+    <h2>Company Overview</h2>
+    <figure>
+        <img src="office.jpg" alt="Modern TechNova workplace">
+        <figcaption>TechNova collaborative workplace</figcaption>
+    </figure>
+    <p>TechNova develops software products for businesses and customers worldwide.</p>
+    <ul>
+        <li>Flexible work environment</li>
+        <li>Learning allowance</li>
+        <li>Health benefits</li>
+        <li>Mentorship programs</li>
+        <li>Career growth opportunities</li>
+    </ul>
+
+    <video controls width="500">
+        <source src="company-culture.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <audio controls>
+        <source src="employee-message.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=77.5%2C28.5%2C77.7%2C28.7&layer=mapnik"
+            width="600" height="350" title="TechNova office map"></iframe>
+
+    <blockquote>“My first year here gave me both technical confidence and a supportive team.” - Employee</blockquote>
+</section>
+
+<section id="jobs">
+    <h2>Open Positions</h2>
+    <table border="1">
+        <caption>Current TechNova Job Opportunities</caption>
+        <tr><th>Role</th><th>Department</th><th>Location</th><th>Experience</th><th>Type</th><th>Closing Date</th></tr>
+        <tr><td>Software Developer</td><td>Engineering</td><td>Delhi</td><td>0-2 years</td><td>Full-time</td><td>20 Sep 2026</td></tr>
+        <tr><td>Data Analyst</td><td>Analytics</td><td>Bengaluru</td><td>1-3 years</td><td>Full-time</td><td>22 Sep 2026</td></tr>
+        <tr><td>UI Designer</td><td>Design</td><td>Pune</td><td>1-3 years</td><td>Full-time</td><td>25 Sep 2026</td></tr>
+        <tr><td>QA Engineer</td><td>Testing</td><td>Noida</td><td>0-2 years</td><td>Full-time</td><td>28 Sep 2026</td></tr>
+        <tr><td>HR Executive</td><td>HR</td><td>Gurugram</td><td>1-2 years</td><td>Full-time</td><td>30 Sep 2026</td></tr>
+        <tr><td>Cloud Intern</td><td>Cloud</td><td>Remote</td><td>Student</td><td>Internship</td><td>2 Oct 2026</td></tr>
+        <tr><td>Cybersecurity Analyst</td><td>Security</td><td>Hyderabad</td><td>2-4 years</td><td>Full-time</td><td>5 Oct 2026</td></tr>
+    </table>
+
+    <article>
+        <h3>Software Developer</h3>
+        <p>Work on web applications and cloud services.</p>
+    </article>
+    <article>
+        <h3>Data Analyst</h3>
+        <p>Turn business data into useful insights.</p>
+    </article>
+</section>
+
+<section id="stages">
+    <h2>Recruitment Stages</h2>
+    <ol>
+        <li>Submit application.</li><li>Initial screening.</li><li>Technical assessment.</li>
+        <li>Technical interview.</li><li>HR discussion.</li><li>Offer and onboarding.</li>
+    </ol>
+
+    <dl>
+        <dt>Screening</dt><dd>Initial review of candidate information.</dd>
+        <dt>Technical Round</dt><dd>Evaluation of technical knowledge and problem solving.</dd>
+        <dt>HR Round</dt><dd>Discussion about communication, role and company fit.</dd>
+        <dt>Offer</dt><dd>Formal employment proposal for a selected candidate.</dd>
+    </dl>
+</section>
+
+<aside>
+    <h2>Candidate Tips</h2>
+    <p>Keep your portfolio updated and prepare examples of your projects.</p>
+</aside>
+
+<section id="apply">
+    <h2>Job Application</h2>
+    <form action="/careers/apply" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" minlength="3" maxlength="50" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required><br><br>
+        <label for="position">Position:</label>
+        <select id="position" name="position" required>
+            <option value="">Select position</option><option>Software Developer</option><option>Data Analyst</option>
+            <option>UI Designer</option><option>QA Engineer</option><option>HR Executive</option>
+            <option>Cloud Intern</option><option>Cybersecurity Analyst</option>
+        </select><br><br>
+        <label for="experience">Experience:</label>
+        <input type="number" id="experience" name="experience" min="0" max="40" required><br><br>
+        <label for="location">Preferred Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+        <label for="portfolio">Portfolio URL:</label>
+        <input type="url" id="portfolio" name="portfolio"><br><br>
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" name="skills" maxlength="200" required><br><br>
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" name="resume"><br><br>
+        <label for="cover">Cover Letter:</label><br>
+        <textarea id="cover" name="cover" rows="7" cols="50" maxlength="1000" required></textarea><br><br>
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">I consent to processing of my application.</label><br><br>
+        <input type="submit" value="Apply">
+        <input type="reset" value="Reset">
+    </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 TechNova &reg; | Careers &amp; Recruitment</p>
+    <p><a href="https://www.example.com">Company Website</a></p>
+</footer>
+</body>
+</html>

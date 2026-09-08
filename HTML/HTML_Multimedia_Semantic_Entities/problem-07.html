@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Estate Property Showcase</title>
+</head>
+<body>
+<header>
+    <h1>GreenView Residency</h1>
+    <p>Modern residential homes with convenient facilities and connectivity.</p>
+    <nav>
+        <a href="#project">Project</a> | <a href="#properties">Properties</a> |
+        <a href="#buying">Buying Steps</a> | <a href="#enquiry">Enquiry</a>
+    </nav>
+</header>
+
+<main>
+<section id="project">
+    <h2>Project Overview</h2>
+    <figure>
+        <img src="property.jpg" alt="GreenView Residency residential building">
+        <figcaption>GreenView Residency residential project</figcaption>
+    </figure>
+    <p><strong>GreenView Residency</strong> offers practical homes designed for modern families.</p>
+    <p>Starting price: <mark>₹45 lakh onwards</mark>.</p>
+
+    <video controls width="500">
+        <source src="property-tour.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <audio controls>
+        <source src="agent-message.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=77.7%2C28.0%2C78.0%2C28.3&layer=mapnik"
+            width="600" height="350" title="Property location map"></iframe>
+
+    <blockquote>“The location and layout made GreenView a comfortable choice for our family.” - Buyer</blockquote>
+</section>
+
+<section>
+    <h2>Amenities</h2>
+    <ul><li>Parking</li><li>Security</li><li>Garden</li><li>Community hall</li><li>Power backup</li><li>Water supply</li></ul>
+</section>
+
+<section id="properties">
+    <h2>Property Configurations</h2>
+    <table border="1">
+        <caption>GreenView Property Comparison</caption>
+        <tr><th>Type</th><th>Area</th><th>Bedrooms</th><th>Floor</th><th>Price</th><th>Availability</th></tr>
+        <tr><td>1 BHK</td><td>650 sq ft</td><td>1</td><td>2</td><td>₹45 lakh</td><td>Available</td></tr>
+        <tr><td>1 BHK</td><td>700 sq ft</td><td>1</td><td>4</td><td>₹48 lakh</td><td>Available</td></tr>
+        <tr><td>2 BHK</td><td>950 sq ft</td><td>2</td><td>2</td><td>₹62 lakh</td><td>Available</td></tr>
+        <tr><td>2 BHK</td><td>1050 sq ft</td><td>2</td><td>5</td><td>₹68 lakh</td><td>Available</td></tr>
+        <tr><td>3 BHK</td><td>1350 sq ft</td><td>3</td><td>3</td><td>₹82 lakh</td><td>Limited</td></tr>
+        <tr><td>3 BHK</td><td>1500 sq ft</td><td>3</td><td>7</td><td>₹95 lakh</td><td>Available</td></tr>
+    </table>
+
+    <dl>
+        <dt>Carpet Area</dt><dd>Usable internal floor area of a home.</dd>
+        <dt>Maintenance</dt><dd>Regular charges for common facilities and services.</dd>
+        <dt>Possession</dt><dd>Date when the buyer can take physical possession.</dd>
+        <dt>Booking Amount</dt><dd>Initial amount paid to reserve a property.</dd>
+    </dl>
+</section>
+
+<section id="buying">
+    <h2>Buying Steps</h2>
+    <ol><li>Select a configuration.</li><li>Visit the property.</li><li>Review documents.</li><li>Pay booking amount.</li><li>Complete agreement and registration.</li></ol>
+</section>
+
+<aside><p>Measurement note: 1 sq ft is approximately 0.093 m². Prices are indicative only.</p></aside>
+
+<section id="enquiry">
+    <h2>Property Enquiry</h2>
+    <form action="/property-enquiry" method="post">
+        <label for="name">Name:</label><input type="text" id="name" name="name" minlength="3" required><br><br>
+        <label for="email">Email:</label><input type="email" id="email" name="email" required><br><br>
+        <label for="mobile">Mobile:</label><input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" maxlength="10" required><br><br>
+        <label for="type">Property Type:</label><select id="type" name="property_type" required><option value="">Select</option><option>1 BHK</option><option>2 BHK</option><option>3 BHK</option></select><br><br>
+        <label for="budget">Budget:</label><input type="number" id="budget" name="budget" min="100000" required><br><br>
+        <label for="location">Preferred Location:</label><input type="text" id="location" name="location" required><br><br>
+        <label for="visit">Visit Date:</label><input type="date" id="visit" name="visit_date" required><br><br>
+        <label for="finance">Financing:</label><select id="finance" name="finance" required><option value="">Select</option><option>Self-funded</option><option>Home Loan</option><option>Not Decided</option></select><br><br>
+        <label for="message">Message:</label><br><textarea id="message" name="message" rows="6" cols="50"></textarea><br><br>
+        <input type="checkbox" id="consent" name="consent" required><label for="consent">I consent to being contacted about this property.</label><br><br>
+        <input type="submit" value="Send Enquiry"><input type="reset" value="Reset">
+    </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 GreenView Residency &reg; &amp; Developers</p>
+    <p>Prices shown in ₹ &mdash; dimensions may be approximate.</p>
+</footer>
+</body>
+</html>

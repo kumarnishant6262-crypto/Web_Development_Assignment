@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sports Academy & Tournament Portal</title>
+</head>
+<body>
+<header>
+    <h1>Champions Sports Academy</h1>
+    <p>Training programs, coaches, tournaments and athlete development.</p>
+    <nav>
+        <a href="#academy">Academy</a> | <a href="#tournament">Tournament</a> |
+        <a href="#training">Training</a> | <a href="#register">Register</a>
+    </nav>
+</header>
+
+<main>
+<section id="academy">
+    <h2>Academy Introduction</h2>
+    <figure>
+        <img src="sports.jpg" alt="Athletes training at a sports academy">
+        <figcaption>Champions Sports Academy training session</figcaption>
+    </figure>
+    <p>Our academy provides structured coaching, fitness programs and competition opportunities.</p>
+
+    <article>
+        <h3>Coach Profile</h3>
+        <p><strong>Coach Rahul Singh</strong> specializes in athlete conditioning and tournament preparation.</p>
+    </article>
+
+    <video controls width="500">
+        <source src="training-highlights.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <audio controls>
+        <source src="coach-instruction.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=77.7%2C28.0%2C77.9%2C28.3&layer=mapnik"
+            width="600" height="350" title="Sports academy venue map"></iframe>
+
+    <blockquote>“Consistent training and teamwork matter more than one good performance.” - Academy Coach</blockquote>
+</section>
+
+<section>
+    <h2>Facilities</h2>
+    <ul><li>Football ground</li><li>Cricket nets</li><li>Fitness room</li><li>Indoor court</li><li>Changing rooms</li><li>First-aid facility</li></ul>
+
+    <h3>Registration / Training Steps</h3>
+    <ol><li>Complete athlete registration.</li><li>Choose a sport and category.</li><li>Attend assessment.</li><li>Join the training schedule.</li><li>Participate in tournaments.</li></ol>
+
+    <dl>
+        <dt>Match</dt><dd>A contest between competing players or teams.</dd>
+        <dt>Fixture</dt><dd>An officially scheduled sports contest.</dd>
+        <dt>League</dt><dd>A competition where teams or players meet across multiple matches.</dd>
+        <dt>Knockout</dt><dd>A competition where losing a match can eliminate a participant.</dd>
+    </dl>
+</section>
+
+<section id="tournament">
+    <h2>Tournament Schedule</h2>
+    <table border="1">
+        <caption>Champions Academy Tournament Schedule</caption>
+        <tr><th>Date</th><th>Time</th><th>Match</th><th>Venue</th><th>Category</th><th>Status</th></tr>
+        <tr><td>10 Oct</td><td>09:00</td><td>Academy A vs Academy B</td><td>Main Ground</td><td>U-17 Football</td><td>Scheduled</td></tr>
+        <tr><td>10 Oct</td><td>11:00</td><td>Academy C vs Academy D</td><td>Main Ground</td><td>U-17 Football</td><td>Scheduled</td></tr>
+        <tr><td>10 Oct</td><td>14:00</td><td>North vs South</td><td>Indoor Court</td><td>Basketball</td><td>Scheduled</td></tr>
+        <tr><td>11 Oct</td><td>09:00</td><td>Riders vs Strikers</td><td>Cricket Ground</td><td>U-19 Cricket</td><td>Scheduled</td></tr>
+        <tr><td>11 Oct</td><td>12:00</td><td>Falcons vs Eagles</td><td>Cricket Ground</td><td>U-19 Cricket</td><td>Scheduled</td></tr>
+        <tr><td>11 Oct</td><td>15:00</td><td>Player A vs Player B</td><td>Indoor Hall</td><td>Badminton</td><td>Scheduled</td></tr>
+        <tr><td>12 Oct</td><td>10:00</td><td>Semi Final 1</td><td>Main Ground</td><td>Football</td><td>Scheduled</td></tr>
+        <tr><td>12 Oct</td><td>15:00</td><td>Final</td><td>Main Ground</td><td>Football</td><td>Scheduled</td></tr>
+    </table>
+</section>
+
+<aside><p>Sports notation: 5 players &times; 2 teams = 10 athletes in a small practice match.</p></aside>
+
+<section id="register">
+    <h2>Athlete Registration</h2>
+    <form action="/athlete-register" method="post">
+        <label for="name">Name:</label><input type="text" id="name" name="name" minlength="3" required><br><br>
+        <label for="email">Email:</label><input type="email" id="email" name="email" required><br><br>
+        <label for="mobile">Mobile:</label><input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" maxlength="10" required><br><br>
+        <label for="dob">Date of Birth:</label><input type="date" id="dob" name="dob" required><br><br>
+        <label for="sport">Sport:</label>
+        <select id="sport" name="sport" required><option value="">Select</option><option>Football</option><option>Cricket</option><option>Basketball</option><option>Badminton</option><option>Athletics</option></select><br><br>
+        <label for="category">Category:</label><input type="text" id="category" name="category" placeholder="Example: U-17" required><br><br>
+        <label for="experience">Experience (years):</label><input type="number" id="experience" name="experience" min="0" max="30" required><br><br>
+        <label for="contact">Emergency Contact:</label><input type="tel" id="contact" name="contact" pattern="[0-9]{10}" maxlength="10" required><br><br>
+        <label for="goals">Training Goals:</label><br><textarea id="goals" name="goals" rows="6" cols="50" required></textarea><br><br>
+        <input type="checkbox" id="consent" name="consent" required><label for="consent">I confirm that the registration information is correct.</label><br><br>
+        <input type="submit" value="Register Athlete"><input type="reset" value="Reset">
+    </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Champions Sports Academy &reg; | Sports &amp; Training</p>
+    <p>All tournament information is subject to change &mdash; check official notices.</p>
+</footer>
+</body>
+</html>

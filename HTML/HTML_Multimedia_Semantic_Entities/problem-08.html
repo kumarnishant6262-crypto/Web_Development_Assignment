@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banking & Personal Finance Education Portal</title>
+</head>
+<body>
+<header>
+    <h1>SmartMoney Finance Education Portal</h1>
+    <p>Learn the basics of saving, banking, credit and responsible personal finance.</p>
+    <nav>
+        <a href="#learn">Learn</a> | <a href="#products">Products</a> |
+        <a href="#steps">Account Steps</a> | <a href="#request">Request Help</a>
+    </nav>
+</header>
+
+<main>
+<section id="learn">
+    <h2>Personal Finance Basics</h2>
+    <figure>
+        <img src="finance.jpg" alt="Person planning personal finances">
+        <figcaption>Planning savings and expenses</figcaption>
+    </figure>
+
+    <article>
+        <h3>Saving and Budgeting</h3>
+        <p>Track income and expenses, maintain an emergency fund and compare financial products before choosing one.</p>
+        <p><strong>Important:</strong> Financial education is general information, not personal financial advice.</p>
+    </article>
+
+    <video controls width="500">
+        <source src="finance-education.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <audio controls>
+        <source src="finance-awareness.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <iframe src="https://www.example.com" width="600" height="350" title="Financial education resource"></iframe>
+
+    <blockquote>“A simple budget can make your financial goals easier to understand and manage.”</blockquote>
+</section>
+
+<section>
+    <h2>Financial Tips</h2>
+    <ul><li>Track monthly spending.</li><li>Save regularly.</li><li>Compare interest rates and charges.</li><li>Read terms before signing.</li><li>Protect banking credentials.</li><li>Avoid unnecessary debt.</li></ul>
+
+    <h3>Account-Opening Steps</h3>
+    <ol><li>Choose an account type.</li><li>Compare fees and benefits.</li><li>Prepare required documents.</li><li>Complete the application.</li><li>Verify your identity.</li><li>Activate the account.</li></ol>
+
+    <dl>
+        <dt>Interest Rate</dt><dd>Percentage applied to money saved or borrowed.</dd>
+        <dt>EMI</dt><dd>Equated Monthly Instalment paid toward a loan.</dd>
+        <dt>Principal</dt><dd>Original amount borrowed or invested.</dd>
+        <dt>Tenure</dt><dd>Length of time for a financial product or loan.</dd>
+    </dl>
+</section>
+
+<section id="products">
+    <h2>Financial Product Comparison</h2>
+    <table border="1">
+        <caption>Example Personal Finance Product Comparison</caption>
+        <tr><th>Product</th><th>Type</th><th>Eligibility</th><th>Rate/Charge</th><th>Tenure</th><th>Benefit</th></tr>
+        <tr><td>Basic Savings</td><td>Account</td><td>Adults</td><td>3%</td><td>Flexible</td><td>Easy saving</td></tr>
+        <tr><td>Student Account</td><td>Account</td><td>Students</td><td>Low charge</td><td>Flexible</td><td>Student benefits</td></tr>
+        <tr><td>Fixed Deposit</td><td>Deposit</td><td>Eligible customers</td><td>6.5%</td><td>1-5 years</td><td>Fixed returns</td></tr>
+        <tr><td>Education Loan</td><td>Loan</td><td>Eligible students</td><td>8.5%</td><td>5-15 years</td><td>Education funding</td></tr>
+        <tr><td>Personal Loan</td><td>Loan</td><td>Eligible adults</td><td>11%</td><td>1-7 years</td><td>Flexible borrowing</td></tr>
+        <tr><td>Debit Card</td><td>Card</td><td>Account holders</td><td>₹250/year</td><td>Annual</td><td>Easy payments</td></tr>
+    </table>
+</section>
+
+<aside>
+    <h2>Notice</h2>
+    <p>Rates and charges are examples for education. Actual products, rates and eligibility can differ.</p>
+    <p>Example: EMI depends on principal, rate and tenure. 10% is greater than 5%: 10% &gt; 5%.</p>
+</aside>
+
+<section id="request">
+    <h2>Education / Callback Request</h2>
+    <form action="/finance-request" method="post">
+        <label for="name">Name:</label><input type="text" id="name" name="name" minlength="3" required><br><br>
+        <label for="email">Email:</label><input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Phone:</label><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required><br><br>
+        <label for="topic">Topic:</label>
+        <select id="topic" name="topic" required><option value="">Select</option><option>Saving</option><option>Bank Accounts</option><option>Loans</option><option>Cards</option><option>Budgeting</option></select><br><br>
+        <label for="contact">Preferred Contact:</label>
+        <select id="contact" name="contact" required><option value="">Select</option><option>Phone</option><option>Email</option></select><br><br>
+        <label for="date">Preferred Date:</label><input type="date" id="date" name="date" required><br><br>
+        <label for="time">Preferred Time:</label><input type="time" id="time" name="time" required><br><br>
+        <label for="question">Question:</label><br><textarea id="question" name="question" rows="6" cols="50" required></textarea><br><br>
+        <input type="checkbox" id="consent" name="consent" required><label for="consent">I agree to be contacted for educational information.</label><br><br>
+        <input type="submit" value="Submit Request"><input type="reset" value="Reset">
+    </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 SmartMoney &reg; &amp; Finance Education</p>
+    <p>Examples use ₹, %, &plusmn;, &times;, &le; and &ge; symbols.</p>
+</footer>
+</body>
+</html>

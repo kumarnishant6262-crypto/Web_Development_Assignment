@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Course Enrollment</title>
+</head>
+
+<body>
+
+    <h1>Online Course Enrollment & Student Registration</h1>
+
+    <p>
+        Welcome to our online learning platform. Register below to enroll
+        in a technical course and provide your learning preferences and
+        educational background.
+    </p>
+
+    <hr>
+
+    <h2>Student Account Information</h2>
+
+    <label for="studentName">Student Name:</label>
+    <br>
+    <textarea id="studentName" name="student_name" rows="1" cols="40"
+        minlength="3" maxlength="50"
+        placeholder="Enter your full name"></textarea>
+
+    <br><br>
+
+    <label for="email">Email Address:</label>
+    <br>
+    <textarea id="email" name="email" rows="1" cols="40"
+        placeholder="Enter your email"></textarea>
+
+    <br><br>
+
+    <label for="password">Password:</label>
+    <br>
+    <textarea id="password" name="password" rows="1" cols="30"
+        minlength="8" maxlength="20"
+        placeholder="Enter password"></textarea>
+
+    <br><br>
+
+    <label for="mobile">Mobile Number:</label>
+    <br>
+    <textarea id="mobile" name="mobile" rows="1" cols="20"
+        minlength="10" maxlength="10"
+        placeholder="Enter 10 digit mobile number"></textarea>
+
+    <br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <br>
+    <select id="dob" name="date_of_birth">
+        <option value="">Select Date of Birth</option>
+        <option value="2004-01-01">01 January 2004</option>
+        <option value="2005-01-01">01 January 2005</option>
+        <option value="2006-01-01">01 January 2006</option>
+        <option value="2007-01-01">01 January 2007</option>
+        <option value="2008-01-01">01 January 2008</option>
+    </select>
+
+    <h2>Course Information</h2>
+
+    <label for="course">Select Course:</label>
+    <br>
+    <select id="course" name="course">
+        <option value="">Select Course</option>
+        <option value="web_development">Web Development</option>
+        <option value="python">Python Programming</option>
+        <option value="java">Java Programming</option>
+        <option value="data_science">Data Science</option>
+        <option value="artificial_intelligence">Artificial Intelligence</option>
+        <option value="cyber_security">Cyber Security</option>
+        <option value="database">Database Management</option>
+    </select>
+
+    <br><br>
+
+    <label for="batch">Select Batch / Session:</label>
+    <br>
+    <select id="batch" name="batch">
+        <option value="">Select Batch</option>
+        <option value="morning">Morning - 9:00 AM</option>
+        <option value="afternoon">Afternoon - 1:00 PM</option>
+        <option value="evening">Evening - 5:00 PM</option>
+        <option value="weekend">Weekend Batch</option>
+    </select>
+
+    <h2>Learning Preference</h2>
+
+    <label for="learningMode">Preferred Learning Mode:</label>
+    <br>
+    <select id="learningMode" name="learning_mode">
+        <option value="">Select Learning Mode</option>
+        <option value="online">Online</option>
+        <option value="offline">Offline</option>
+        <option value="hybrid">Hybrid</option>
+    </select>
+
+    <br><br>
+
+    <label for="skills">Areas of Interest:</label>
+    <br>
+    <select id="skills" name="skills" multiple size="5">
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="web_development">Web Development</option>
+        <option value="data_structures">Data Structures</option>
+        <option value="database">Database</option>
+    </select>
+
+    <h2>Educational Background</h2>
+
+    <label for="education">Education Level:</label>
+    <br>
+    <select id="education" name="education">
+        <option value="">Select Education Level</option>
+        <option value="12th">12th / Intermediate</option>
+        <option value="diploma">Diploma</option>
+        <option value="undergraduate">Undergraduate</option>
+        <option value="graduate">Graduate</option>
+        <option value="postgraduate">Postgraduate</option>
+    </select>
+
+    <br><br>
+
+    <label for="college">College / Institution:</label>
+    <br>
+    <textarea id="college" name="college" rows="1" cols="45"
+        maxlength="100"
+        placeholder="Enter college or institution name"></textarea>
+
+    <br><br>
+
+    <label for="semester">Current Semester / Year:</label>
+    <br>
+    <select id="semester" name="semester">
+        <option value="">Select Semester / Year</option>
+        <option value="1st">1st Semester / Year</option>
+        <option value="2nd">2nd Semester / Year</option>
+        <option value="3rd">3rd Semester / Year</option>
+        <option value="4th">4th Semester / Year</option>
+        <option value="5th">5th Semester / Year</option>
+        <option value="6th">6th Semester / Year</option>
+    </select>
+
+    <br><br>
+
+    <label for="experience">Programming Experience (Years):</label>
+    <br>
+    <select id="experience" name="programming_experience">
+        <option value="">Select Experience</option>
+        <option value="0">0 Years</option>
+        <option value="1">1 Year</option>
+        <option value="2">2 Years</option>
+        <option value="3">3 Years</option>
+        <option value="4">4 Years</option>
+        <option value="5">5+ Years</option>
+    </select>
+
+    <br><br>
+
+    <label for="portfolio">GitHub / Portfolio URL:</label>
+    <br>
+    <textarea id="portfolio" name="portfolio" rows="1" cols="50"
+        placeholder="https://github.com/yourname"></textarea>
+
+    <h2>Learning Goals</h2>
+
+    <label for="goals">What do you want to learn?</label>
+    <br>
+    <textarea id="goals" name="learning_goals" rows="6" cols="55"
+        maxlength="500"
+        placeholder="Describe your learning goals"></textarea>
+
+    <h2>Confirmation</h2>
+
+    <label for="confirmation">Confirm Registration:</label>
+    <br>
+    <select id="confirmation" name="confirmation">
+        <option value="">Select</option>
+        <option value="confirmed">
+            I confirm that the information provided is correct
+        </option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Submit Registration</button>
+    <button type="reset">Reset</button>
+
+    <hr>
+
+    <h2>Course Information</h2>
+
+    <p>
+        Learn more about our technical courses by visiting our
+        <a href="https://www.example.com">Course Information Page</a>.
+    </p>
+
+    <img src="course.jpg" alt="Online Technical Course" width="400">
+
+</body>
+</html>

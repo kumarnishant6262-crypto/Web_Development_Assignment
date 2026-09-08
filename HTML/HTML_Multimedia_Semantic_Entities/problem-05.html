@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News & Media Digital Magazine</title>
+</head>
+<body>
+<header>
+    <h1>DailyPulse Digital Magazine</h1>
+    <p>Technology, business, sports, culture and breaking stories.</p>
+    <nav>
+        <a href="#featured">Featured</a> | <a href="#categories">Categories</a> |
+        <a href="#headlines">Headlines</a> | <a href="#newsletter">Newsletter</a>
+    </nav>
+</header>
+
+<main>
+<section id="featured">
+    <h2>Featured Story</h2>
+    <article>
+        <figure>
+            <img src="news.jpg" alt="Journalist reporting a technology news story">
+            <figcaption>Technology remains a major driver of business change.</figcaption>
+        </figure>
+        <h3>Technology Shapes the Next Generation of Work</h3>
+        <p><strong>Author:</strong> Arjun Mehta | <em>Technology Desk</em></p>
+        <p>New digital tools are changing how teams learn, collaborate and create products.</p>
+        <blockquote>“Good journalism helps readers understand why a story matters, not just what happened.”</blockquote>
+    </article>
+
+    <video controls width="500">
+        <source src="news-report.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <audio controls>
+        <source src="bulletin.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=77.5%2C28.5%2C77.7%2C28.7&layer=mapnik"
+            width="600" height="350" title="News bureau location map"></iframe>
+</section>
+
+<section id="categories">
+    <h2>Categories</h2>
+    <ul><li>Technology</li><li>Business</li><li>Sports</li><li>Culture</li><li>Breaking News</li></ul>
+</section>
+
+<section id="headlines">
+    <h2>Top Story Ranking</h2>
+    <ol>
+        <li>Technology Shapes the Next Generation of Work</li>
+        <li>New Business Trends to Watch</li>
+        <li>Local Sports Teams Prepare for Finals</li>
+        <li>Cultural Festival Draws Thousands</li>
+        <li>New Digital Education Programs Announced</li>
+    </ol>
+
+    <dl>
+        <dt>Editorial</dt><dd>Opinion or official viewpoint of the publication.</dd>
+        <dt>Breaking News</dt><dd>A developing story reported quickly as events unfold.</dd>
+        <dt>Opinion</dt><dd>A writer's analysis or personal viewpoint.</dd>
+        <dt>Sponsored Content</dt><dd>Content produced with support from an advertiser or partner.</dd>
+    </dl>
+
+    <table border="1">
+        <caption>DailyPulse News Desk</caption>
+        <tr><th>Story</th><th>Category</th><th>Author</th><th>Publish Time</th><th>Status</th><th>Reference</th></tr>
+        <tr><td>AI in Education</td><td>Technology</td><td>Arjun Mehta</td><td>08:00</td><td>Published</td><td><a href="story1.html">Read</a></td></tr>
+        <tr><td>Market Outlook</td><td>Business</td><td>Neha Rao</td><td>09:15</td><td>Published</td><td><a href="story2.html">Read</a></td></tr>
+        <tr><td>Championship Preview</td><td>Sports</td><td>Ravi Singh</td><td>10:00</td><td>Published</td><td><a href="story3.html">Read</a></td></tr>
+        <tr><td>City Art Festival</td><td>Culture</td><td>Meera Joshi</td><td>11:20</td><td>Published</td><td><a href="story4.html">Read</a></td></tr>
+        <tr><td>Campus Innovation</td><td>Technology</td><td>Arjun Mehta</td><td>12:10</td><td>Updated</td><td><a href="story5.html">Read</a></td></tr>
+        <tr><td>Startup Funding</td><td>Business</td><td>Neha Rao</td><td>13:30</td><td>Breaking</td><td><a href="story6.html">Read</a></td></tr>
+        <tr><td>National Games</td><td>Sports</td><td>Ravi Singh</td><td>14:45</td><td>Published</td><td><a href="story7.html">Read</a></td></tr>
+        <tr><td>Book Awards</td><td>Culture</td><td>Meera Joshi</td><td>16:00</td><td>Published</td><td><a href="story8.html">Read</a></td></tr>
+    </table>
+</section>
+
+<aside>
+    <h2>Editor's Note</h2>
+    <p>All stories should be checked against reliable sources before publication.</p>
+</aside>
+
+<section id="newsletter">
+    <h2>Newsletter / Contact</h2>
+    <form action="/newsletter" method="post">
+        <label for="name">Name:</label><input type="text" id="name" name="name" minlength="3" required><br><br>
+        <label for="email">Email:</label><input type="email" id="email" name="email" required><br><br>
+        <label for="category">Category:</label>
+        <select id="category" name="category" required><option value="">Select</option><option>Technology</option><option>Business</option><option>Sports</option><option>Culture</option></select><br><br>
+        <label for="frequency">Frequency:</label>
+        <select id="frequency" name="frequency" required><option value="">Select</option><option>Daily</option><option>Weekly</option><option>Monthly</option></select><br><br>
+        <label for="message">Message:</label><br><textarea id="message" name="message" rows="6" cols="50"></textarea><br><br>
+        <input type="checkbox" id="consent" name="consent" required><label for="consent">I consent to receive the newsletter.</label><br><br>
+        <input type="submit" value="Subscribe"><input type="reset" value="Reset">
+    </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 DailyPulse &reg; | News &amp; Media &trade;</p>
+    <p>All rights reserved &mdash; use of content requires permission.</p>
+</footer>
+</body>
+</html>

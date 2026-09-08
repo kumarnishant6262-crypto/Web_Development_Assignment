@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Learning & Course Portal</title>
+</head>
+<body>
+<header>
+    <h1>SkillSphere Online Learning</h1>
+    <p>Learn practical technology skills through structured online courses.</p>
+    <nav>
+        <a href="#course">Course</a> | <a href="#curriculum">Curriculum</a> |
+        <a href="#instructor">Instructor</a> | <a href="#enroll">Enroll</a>
+    </nav>
+</header>
+
+<main>
+<section id="course">
+    <h2>Full Stack Web Development</h2>
+    <figure>
+        <img src="course.jpg" alt="Student learning web development online">
+        <figcaption>Practical web development learning</figcaption>
+    </figure>
+    <p><strong>Course objective:</strong> Learn how to create structured and accessible websites.</p>
+    <p><em>Note:</em> HTML forms, semantic elements and multimedia are included in the course.</p>
+
+    <video controls width="500">
+        <source src="lesson-preview.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <audio controls>
+        <source src="instructor-audio.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <iframe src="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            width="700" height="400" title="MDN HTML learning resource"></iframe>
+</section>
+
+<section id="instructor">
+    <h2>Instructor</h2>
+    <article>
+        <h3>Priya Sharma</h3>
+        <p>Senior web developer and instructor with experience in frontend and backend development.</p>
+        <blockquote>“Practice is the fastest way to turn a programming concept into a useful skill.”</blockquote>
+    </article>
+</section>
+
+<section id="curriculum">
+    <h2>Learning Outcomes</h2>
+    <ul>
+        <li>Create semantic HTML pages</li><li>Build accessible forms</li>
+        <li>Use multimedia correctly</li><li>Understand tables and lists</li>
+        <li>Publish a complete web project</li>
+    </ul>
+
+    <h3>Learning Roadmap</h3>
+    <ol>
+        <li>Learn HTML structure.</li><li>Learn text, links and images.</li>
+        <li>Learn lists and tables.</li><li>Learn forms and validation.</li>
+        <li>Learn semantic HTML and multimedia.</li><li>Build a final project.</li>
+    </ol>
+
+    <dl>
+        <dt>Module</dt><dd>A major unit of the course.</dd>
+        <dt>Prerequisite</dt><dd>Basic computer knowledge and internet use.</dd>
+        <dt>Assessment</dt><dd>A task or test used to evaluate learning.</dd>
+        <dt>Certificate</dt><dd>Recognition awarded after successful completion.</dd>
+    </dl>
+
+    <table border="1">
+        <caption>Full Stack Course Curriculum</caption>
+        <tr><th>Module</th><th>Lesson</th><th>Duration</th><th>Level</th><th>Assessment</th></tr>
+        <tr><td>1</td><td>HTML Basics</td><td>2 hrs</td><td>Beginner</td><td>Quiz</td></tr>
+        <tr><td>1</td><td>Text and Links</td><td>2 hrs</td><td>Beginner</td><td>Exercise</td></tr>
+        <tr><td>2</td><td>Lists and Tables</td><td>3 hrs</td><td>Beginner</td><td>Assignment</td></tr>
+        <tr><td>2</td><td>Forms</td><td>3 hrs</td><td>Beginner</td><td>Practical</td></tr>
+        <tr><td>3</td><td>Semantic HTML</td><td>2 hrs</td><td>Intermediate</td><td>Quiz</td></tr>
+        <tr><td>3</td><td>Audio and Video</td><td>2 hrs</td><td>Intermediate</td><td>Exercise</td></tr>
+        <tr><td>4</td><td>Accessibility</td><td>2 hrs</td><td>Intermediate</td><td>Review</td></tr>
+        <tr><td>4</td><td>Final Project</td><td>5 hrs</td><td>Advanced</td><td>Project</td></tr>
+    </table>
+</section>
+
+<aside>
+    <h2>Course Note</h2>
+    <p>The course fee is ₹4,999&nbsp;only. Students should complete at least 80% of activities.</p>
+</aside>
+
+<section id="enroll">
+    <h2>Enrollment Form</h2>
+    <form action="/enroll" method="post">
+        <label for="name">Learner Name:</label><input type="text" id="name" name="name" minlength="3" required><br><br>
+        <label for="email">Email:</label><input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Phone:</label><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required><br><br>
+        <label for="qualification">Qualification:</label><input type="text" id="qualification" name="qualification" required><br><br>
+        <label for="course">Course:</label>
+        <select id="course" name="course" required><option value="">Select</option><option>Full Stack Web Development</option><option>Python Programming</option><option>Data Analytics</option></select><br><br>
+        <label for="mode">Mode:</label>
+        <select id="mode" name="mode" required><option value="">Select</option><option>Online</option><option>Offline</option><option>Hybrid</option></select><br><br>
+        <label for="schedule">Schedule:</label><input type="text" id="schedule" name="schedule" placeholder="Example: Weekdays 6 PM" required><br><br>
+        <label for="goals">Learning Goals:</label><br>
+        <textarea id="goals" name="goals" rows="6" cols="50" minlength="10" maxlength="500" required></textarea><br><br>
+        <input type="checkbox" id="consent" name="consent" required><label for="consent">I agree to the enrollment terms.</label><br><br>
+        <input type="submit" value="Enroll"><input type="reset" value="Reset">
+    </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 SkillSphere &reg; | Learn &amp; Grow&trade;</p>
+    <p>5 &lt; 10, 10 &gt; 5, 50% &plusmn; 2%</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel & Tourism Destination Explorer</title>
+</head>
+<body>
+<header>
+    <h1>Explore Uttarakhand - Travel & Tourism</h1>
+    <p>Discover mountains, culture, wildlife and unforgettable experiences.</p>
+    <nav>
+        <a href="#overview">Overview</a> | <a href="#attractions">Attractions</a> |
+        <a href="#tips">Travel Tips</a> | <a href="#enquiry">Trip Enquiry</a>
+    </nav>
+</header>
+
+<main>
+<section id="overview">
+    <h2>Destination Overview</h2>
+    <figure>
+        <img src="mountains.jpg" alt="Snow-covered Himalayan mountains in Uttarakhand">
+        <figcaption>Himalayan landscape of Uttarakhand</figcaption>
+    </figure>
+    <p>Uttarakhand combines mountain scenery, temples, forests and adventure activities.</p>
+
+    <video controls width="500">
+        <source src="destination-video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <audio controls>
+        <source src="travel-guide.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=78.0%2C29.5%2C79.2%2C30.5&layer=mapnik"
+            width="600" height="350" title="Uttarakhand travel map"></iframe>
+</section>
+
+<section id="attractions">
+    <h2>Popular Attractions</h2>
+    <ul>
+        <li>Nainital Lake</li><li>Mussoorie</li><li>Rishikesh</li><li>Jim Corbett National Park</li>
+        <li>Auli</li><li>Haridwar</li><li>Valley of Flowers</li><li>Almora</li>
+    </ul>
+
+    <table border="1">
+        <caption>Uttarakhand Attraction Guide</caption>
+        <tr><th>Attraction</th><th>Type</th><th>Best Time</th><th>Duration</th><th>Entry Fee</th><th>Reference</th></tr>
+        <tr><td>Nainital Lake</td><td>Nature</td><td>Mar-Jun</td><td>2 hrs</td><td>₹200</td><td><a href="nainital.html">Guide</a></td></tr>
+        <tr><td>Mussoorie</td><td>Hill Station</td><td>Mar-Jun</td><td>1 day</td><td>₹100</td><td><a href="mussoorie.html">Guide</a></td></tr>
+        <tr><td>Rishikesh</td><td>Adventure</td><td>Sep-Nov</td><td>1 day</td><td>₹500</td><td><a href="rishikesh.html">Guide</a></td></tr>
+        <tr><td>Corbett</td><td>Wildlife</td><td>Nov-Jun</td><td>1 day</td><td>₹800</td><td><a href="corbett.html">Guide</a></td></tr>
+        <tr><td>Auli</td><td>Skiing</td><td>Dec-Feb</td><td>2 days</td><td>₹600</td><td><a href="auli.html">Guide</a></td></tr>
+        <tr><td>Haridwar</td><td>Culture</td><td>Oct-Mar</td><td>4 hrs</td><td>Free</td><td><a href="haridwar.html">Guide</a></td></tr>
+        <tr><td>Valley of Flowers</td><td>Trekking</td><td>Jul-Sep</td><td>2 days</td><td>₹150</td><td><a href="valley.html">Guide</a></td></tr>
+        <tr><td>Almora</td><td>Heritage</td><td>Mar-Jun</td><td>1 day</td><td>₹100</td><td><a href="almora.html">Guide</a></td></tr>
+    </table>
+</section>
+
+<section id="tips">
+    <h2>One-Day Itinerary</h2>
+    <ol>
+        <li>Start with an early morning local sightseeing tour.</li>
+        <li>Visit a major attraction before noon.</li>
+        <li>Enjoy a local lunch.</li>
+        <li>Try a guided cultural or adventure activity.</li>
+        <li>Finish with an evening viewpoint visit.</li>
+    </ol>
+
+    <h3>Visitor Terms</h3>
+    <dl>
+        <dt>Check-in</dt><dd>Time when a visitor arrives at accommodation.</dd>
+        <dt>Guided Tour</dt><dd>A tour conducted by a trained local guide.</dd>
+        <dt>Local Transport</dt><dd>Buses, taxis and other transport within the destination.</dd>
+        <dt>Travel Pass</dt><dd>A ticket or pass allowing access to selected services.</dd>
+    </dl>
+
+    <aside>
+        <p>Carry water, identification and suitable clothing. Respect local communities and natural areas.</p>
+    </aside>
+</section>
+
+<section id="enquiry">
+    <h2>Trip Enquiry</h2>
+    <form action="/trip-enquiry" method="post">
+        <label for="name">Name:</label><input type="text" id="name" name="name" minlength="3" required><br><br>
+        <label for="email">Email:</label><input type="email" id="email" name="email" required><br><br>
+        <label for="mobile">Mobile:</label><input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" maxlength="10" required><br><br>
+        <label for="date">Travel Date:</label><input type="date" id="date" name="travel_date" required><br><br>
+        <label for="visitors">Visitors:</label><input type="number" id="visitors" name="visitors" min="1" max="100" required><br><br>
+        <label for="package">Package:</label>
+        <select id="package" name="package" required>
+            <option value="">Select package</option><option>Weekend Hills</option><option>Adventure Tour</option>
+            <option>Wildlife Tour</option><option>Family Heritage Tour</option>
+        </select><br><br>
+        <label for="preferences">Preferences:</label><input type="text" id="preferences" name="preferences" maxlength="200"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="6" cols="50" required></textarea><br><br>
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">I agree to be contacted about this enquiry.</label><br><br>
+        <input type="submit" value="Send Enquiry"><input type="reset" value="Reset">
+    </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Uttarakhand Tourism &reg; | Travel &amp; Explore</p>
+    <p>Prices shown in ₹. Symbols: &lt; &gt; &le; &ge; &times; &plusmn; &mdash;</p>
+</footer>
+</body>
+</html>

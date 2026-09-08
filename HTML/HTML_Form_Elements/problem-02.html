@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Appointment Booking</title>
+</head>
+
+<body>
+
+    <h1>Hospital / Clinic Appointment Booking</h1>
+
+    <p>
+        Welcome to our online appointment booking system. Please provide
+        your details and select your preferred doctor, date and time.
+    </p>
+
+    <hr>
+
+    <h2>Patient Information</h2>
+
+    <label for="patientName">Patient Name:</label>
+    <br>
+    <textarea id="patientName" name="patient_name" rows="1" cols="40"
+        minlength="3" maxlength="50"
+        placeholder="Enter patient name"></textarea>
+
+    <br><br>
+
+    <label for="email">Email Address:</label>
+    <br>
+    <textarea id="email" name="email" rows="1" cols="40"
+        placeholder="Enter email address"></textarea>
+
+    <br><br>
+
+    <label for="mobile">Mobile Number:</label>
+    <br>
+    <textarea id="mobile" name="mobile" rows="1" cols="20"
+        minlength="10" maxlength="10"
+        placeholder="Enter 10 digit mobile number"></textarea>
+
+    <br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <br>
+    <select id="dob" name="date_of_birth">
+        <option value="">Select Date of Birth</option>
+        <option value="2005-01-01">01 January 2005</option>
+        <option value="2006-01-01">01 January 2006</option>
+        <option value="2007-01-01">01 January 2007</option>
+        <option value="2008-01-01">01 January 2008</option>
+        <option value="2009-01-01">01 January 2009</option>
+    </select>
+
+    <br><br>
+
+    <label for="patientId">Patient ID (Optional):</label>
+    <br>
+    <textarea id="patientId" name="patient_id" rows="1" cols="25"
+        maxlength="20" placeholder="Enter patient ID"></textarea>
+
+    <h2>Appointment Details</h2>
+
+    <label for="appointmentDate">Appointment Date:</label>
+    <br>
+    <select id="appointmentDate" name="appointment_date">
+        <option value="">Select Appointment Date</option>
+        <option value="2026-09-07">07 September 2026</option>
+        <option value="2026-09-08">08 September 2026</option>
+        <option value="2026-09-09">09 September 2026</option>
+        <option value="2026-09-10">10 September 2026</option>
+        <option value="2026-09-11">11 September 2026</option>
+    </select>
+
+    <br><br>
+
+    <label for="appointmentTime">Appointment Time:</label>
+    <br>
+    <select id="appointmentTime" name="appointment_time">
+        <option value="">Select Time</option>
+        <option value="09:00">09:00 AM</option>
+        <option value="10:00">10:00 AM</option>
+        <option value="11:00">11:00 AM</option>
+        <option value="02:00">02:00 PM</option>
+        <option value="03:00">03:00 PM</option>
+        <option value="04:00">04:00 PM</option>
+    </select>
+
+    <br><br>
+
+    <label for="doctor">Select Doctor:</label>
+    <br>
+    <select id="doctor" name="doctor">
+        <option value="">Select Doctor</option>
+        <option value="dr_amit">Dr. Amit Sharma - Cardiologist</option>
+        <option value="dr_neha">Dr. Neha Singh - Dermatologist</option>
+        <option value="dr_rohit">Dr. Rohit Verma - Neurologist</option>
+        <option value="dr_pooja">Dr. Pooja Gupta - Pediatrician</option>
+        <option value="dr_rahul">Dr. Rahul Kumar - Orthopedic</option>
+    </select>
+
+    <br><br>
+
+    <label for="visitType">Visit Type:</label>
+    <br>
+    <select id="visitType" name="visit_type">
+        <option value="">Select Visit Type</option>
+        <option value="new_patient">New Patient</option>
+        <option value="follow_up">Follow-up</option>
+        <option value="consultation">Consultation</option>
+        <option value="emergency">Emergency</option>
+    </select>
+
+    <br><br>
+
+    <label for="communication">Preferred Communication Method:</label>
+    <br>
+    <select id="communication" name="communication">
+        <option value="">Select Method</option>
+        <option value="phone">Phone Call</option>
+        <option value="email">Email</option>
+        <option value="sms">SMS</option>
+    </select>
+
+    <h2>Reason for Visit</h2>
+
+    <label for="reason">Reason / Additional Information:</label>
+    <br>
+    <textarea id="reason" name="reason" rows="6" cols="55"
+        maxlength="500"
+        placeholder="Enter reason for your visit"></textarea>
+
+    <h2>Appointment Terms</h2>
+
+    <label for="terms">Accept Appointment Terms:</label>
+    <br>
+    <select id="terms" name="terms">
+        <option value="">Select</option>
+        <option value="accepted">I Accept the Appointment Terms</option>
+        <option value="not_accepted">I Do Not Accept</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Submit Appointment</button>
+    <button type="reset">Reset</button>
+
+    <h2>Clinic Timings</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Day</th>
+            <th>Opening Time</th>
+            <th>Closing Time</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td>09:00 AM</td>
+            <td>05:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td>09:00 AM</td>
+            <td>05:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>09:00 AM</td>
+            <td>05:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Thursday</td>
+            <td>09:00 AM</td>
+            <td>05:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td>09:00 AM</td>
+            <td>05:00 PM</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <p>
+        For urgent assistance, contact the clinic at
+        <a href="tel:1800123456">1800-123-456</a>.
+    </p>
+
+    <p>
+        <a href="mailto:clinic@example.com">Email Clinic Support</a>
+    </p>
+
+</body>
+</html>

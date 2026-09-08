@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission Application</title>
+</head>
+
+<body>
+
+    <h1>College Admission Application Form</h1>
+
+    <p>
+        Welcome to our college admission portal. Please provide the required
+        information carefully to apply for admission to your desired course.
+    </p>
+
+    <hr>
+
+    <h2>Personal Information</h2>
+
+    <label>Full Name:</label>
+    <br>
+    <textarea name="full_name" rows="1" cols="40" minlength="3" maxlength="50"
+        placeholder="Enter your full name"></textarea>
+    <br><br>
+
+    <label>Date of Birth:</label>
+    <br>
+    <input type="date" name="dob" min="2000-01-01" max="2010-12-31">
+    <br><br>
+
+    <label>Email Address:</label>
+    <br>
+    <textarea name="email" rows="1" cols="40" placeholder="Enter your email"></textarea>
+    <br><br>
+
+    <label>Mobile Number:</label>
+    <br>
+    <textarea name="mobile" rows="1" cols="20" minlength="10" maxlength="10"
+        placeholder="Enter mobile number"></textarea>
+    <br><br>
+
+    <label>Application PIN:</label>
+    <br>
+    <textarea name="pin" rows="1" cols="20" minlength="4" maxlength="6"
+        placeholder="Enter application PIN"></textarea>
+    <br><br>
+
+    <label>Gender:</label>
+    <br>
+    <select name="gender">
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <br><br>
+
+    <label>Category:</label>
+    <br>
+    <select name="category">
+        <option value="">Select Category</option>
+        <option value="general">General</option>
+        <option value="obc">OBC</option>
+        <option value="sc">SC</option>
+        <option value="st">ST</option>
+    </select>
+
+    <h2>Address</h2>
+
+    <label>Permanent Address:</label>
+    <br>
+    <textarea name="address" rows="5" cols="50"
+        placeholder="Enter your permanent address"></textarea>
+
+    <h2>Course / Program</h2>
+
+    <label>Select Course:</label>
+    <br>
+    <select name="course">
+        <option value="">Select Course</option>
+        <option value="bca">BCA</option>
+        <option value="btech">B.Tech</option>
+        <option value="bba">BBA</option>
+        <option value="bsc">B.Sc</option>
+        <option value="ba">B.A.</option>
+        <option value="bcom">B.Com</option>
+    </select>
+
+    <h2>Previous Qualification</h2>
+
+    <label>Qualification:</label>
+    <br>
+    <select name="qualification">
+        <option value="">Select Qualification</option>
+        <option value="12th">12th / Intermediate</option>
+        <option value="diploma">Diploma</option>
+        <option value="other">Other</option>
+    </select>
+    <br><br>
+
+    <label>Percentage / CGPA:</label>
+    <br>
+    <textarea name="percentage" rows="1" cols="20"
+        placeholder="Enter percentage or CGPA"></textarea>
+    <br><br>
+
+    <label>Passing Year:</label>
+    <br>
+    <select name="passing_year">
+        <option value="">Select Year</option>
+        <option value="2026">2026</option>
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+    </select>
+    <br><br>
+
+    <label>School / College Name:</label>
+    <br>
+    <textarea name="school_college" rows="1" cols="45"
+        placeholder="Enter school or college name"></textarea>
+
+    <h2>Admission Document</h2>
+
+    <p>Upload your previous qualification document:</p>
+
+    <button type="button">Choose Admission Document</button>
+
+    <h2>Declaration</h2>
+
+    <p>
+        I declare that the information provided by me is correct and complete.
+        I agree to the terms and conditions of the college admission process.
+    </p>
+
+    <label>
+        <input type="checkbox" name="declaration" required>
+        I agree to the declaration
+    </label>
+
+    <br><br>
+
+    <button type="submit">Submit Application</button>
+    <button type="reset">Reset</button>
+
+    <hr>
+
+    <p>
+        For more information, visit the
+        <a href="https://www.example.com">College Admission Website</a>.
+    </p>
+
+</body>
+</html>

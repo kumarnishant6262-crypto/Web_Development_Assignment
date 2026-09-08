@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Digital Campus & Admissions Portal</title>
+</head>
+<body>
+<header>
+    <h1>ABC University - Digital Campus & Admissions</h1>
+    <p>Explore programs, campus life and admission opportunities.</p>
+    <nav>
+        <a href="#programs">Programs</a> |
+        <a href="#admission">Admission</a> |
+        <a href="#campus">Campus Life</a> |
+        <a href="#apply">Apply Now</a>
+    </nav>
+</header>
+
+<main>
+<section id="campus">
+    <h2>Welcome to ABC University</h2>
+    <figure>
+        <img src="university.jpg" alt="ABC University campus with students">
+        <figcaption>ABC University main campus</figcaption>
+    </figure>
+    <p>ABC University offers modern education, practical learning and student-focused facilities.</p>
+
+    <video controls width="500" muted>
+        <source src="campus-tour.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <audio controls>
+        <source src="orientation.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=77.5%2C28.5%2C77.7%2C28.7&layer=mapnik"
+            width="600" height="350" title="University location map"></iframe>
+</section>
+
+<section id="programs">
+    <h2>Academic Programs</h2>
+    <ul>
+        <li>Computer Science</li>
+        <li>Engineering</li>
+        <li>Business Administration</li>
+        <li>Commerce</li>
+        <li>Science</li>
+    </ul>
+
+    <table border="1">
+        <caption>ABC University Program Information</caption>
+        <tr>
+            <th>Program</th><th>Duration</th><th>Eligibility</th><th>Intake</th><th>Fee</th>
+        </tr>
+        <tr><td>B.Tech CSE</td><td>4 years</td><td>12th PCM</td><td>120</td><td>₹1,20,000/year</td></tr>
+        <tr><td>B.Tech ECE</td><td>4 years</td><td>12th PCM</td><td>90</td><td>₹1,15,000/year</td></tr>
+        <tr><td>BCA</td><td>3 years</td><td>12th</td><td>100</td><td>₹80,000/year</td></tr>
+        <tr><td>BBA</td><td>3 years</td><td>12th</td><td>80</td><td>₹75,000/year</td></tr>
+        <tr><td>B.Sc CS</td><td>3 years</td><td>12th Science</td><td>70</td><td>₹65,000/year</td></tr>
+        <tr><td>B.Com</td><td>3 years</td><td>12th Commerce</td><td>100</td><td>₹60,000/year</td></tr>
+    </table>
+</section>
+
+<section id="admission">
+    <h2>Admission Information</h2>
+    <article>
+        <h3>Admission Announcement</h3>
+        <p><strong>Applications are now open.</strong> The last date is <mark>30 June 2026</mark>.</p>
+        <blockquote>“The university gave me the confidence to turn classroom learning into real projects.” - ABC Alumni</blockquote>
+    </article>
+
+    <h3>Admission Steps</h3>
+    <ol>
+        <li>Choose a program.</li>
+        <li>Complete the application form.</li>
+        <li>Upload required information.</li>
+        <li>Pay the application fee.</li>
+        <li>Attend counselling or selection rounds.</li>
+    </ol>
+
+    <h3>Important Terms</h3>
+    <dl>
+        <dt>Eligibility</dt><dd>Minimum academic requirements for a program.</dd>
+        <dt>Scholarship</dt><dd>Financial support offered to eligible students.</dd>
+        <dt>Merit List</dt><dd>List prepared according to admission performance.</dd>
+        <dt>Application Fee</dt><dd>Fee paid while submitting an application.</dd>
+    </dl>
+</section>
+
+<aside>
+    <h2>Application Guidance</h2>
+    <p>Keep your marksheet, identity proof and recent photograph ready before applying.</p>
+    <p>Tuition may be ₹1,20,000&nbsp;per year. Mathematics marks should be &gt;= 60% where applicable.</p>
+</aside>
+
+<section id="apply">
+    <h2>Apply Now</h2>
+    <form action="/apply" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" minlength="3" maxlength="50" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" maxlength="10" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="program">Program:</label>
+        <select id="program" name="program" required>
+            <option value="">Select program</option>
+            <option>B.Tech CSE</option><option>B.Tech ECE</option><option>BCA</option>
+            <option>BBA</option><option>B.Sc CS</option><option>B.Com</option>
+        </select><br><br>
+
+        <label for="qualification">Qualification:</label>
+        <input type="text" id="qualification" name="qualification" required><br><br>
+
+        <label for="option">Study Option:</label>
+        <select id="option" name="option" required>
+            <option value="">Select option</option><option>Regular</option><option>Scholarship</option>
+        </select><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="5" cols="45" minlength="10" maxlength="300" required></textarea><br><br>
+
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">I confirm that the information is correct.</label><br><br>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset">
+    </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 ABC University &reg; | ABC University&trade; &amp; Admissions Office</p>
+    <p><a href="https://www.example.com">Official University Website</a></p>
+</footer>
+</body>
+</html>
