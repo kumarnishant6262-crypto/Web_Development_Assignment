@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Periodic Table of Elements</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 35px 0 70px 0;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    margin: 0 0 32px 0;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #3a3a3a;
+  }
+
+  .wrap {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+
+  .table {
+    display: grid;
+    grid-template-columns: repeat(18, 46px);
+    gap: 4px;
+    justify-content: center;
+  }
+
+  .box {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.28);
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+  }
+
+
+  .red    { background-color: #a02020; }
+  .green  { background-color: #8cc63f; }
+  .blue   { background-color: #2020d0; }
+  .purple { background-color: #a020a0; }
+  .orange { background-color: #f57c00; }
+  .pink   { background-color: #e91e63; }
+  .yellow { background-color: #ffc107; }
+  .gray   { background-color: #6e6e6e; }
+
+  .dark-text { color: #333333; }
+
+  .cream {
+    background-color: #f7efd9;
+    border: 2px solid #8a8a8a;
+  }
+
+
+  .si {
+    grid-area: 2 / 3 / 3 / 5;
+    width: 96px;
+    height: 96px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #8cc63f;
+    border: 2px solid #556b2f;
+    border-radius: 4px;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.35);
+    color: #2f3a17;
+  }
+
+  .si .number {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .si .symbol {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .si .name {
+    margin-top: 4px;
+    font-size: 11px;
+  }
+
+
+
+  .fblock {
+    margin-top: 42px;
+    margin-left: 185px;
+  }
+
+  .frow {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 3px;
+  }
+
+  .fcell {
+    width: 24px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+  }
+
+  .fcell.dark  { background-color: #4e5b23; }
+  .fcell.light { background-color: #8cc63f; }
+</style>
+</head>
+<body>
+
+  <h1>THE PERIODIC TABLE OF ELEMENTS</h1>
+
+  <div class="wrap">
+
+    <div class="table">
+
+
+      <div class="box red" style="grid-area:1/1;">H</div>
+      <div class="box yellow" style="grid-area:1/18;"></div>
+
+
+      <div class="box green dark-text" style="grid-area:2/1; align-self:center;">4</div>
+
+      <div class="si">
+        <span class="number">14</span>
+        <span class="symbol">Si</span>
+        <span class="name">Silicon</span>
+      </div>
+
+      <div class="box purple" style="grid-area:2/13; align-self:center;"></div>
+      <div class="box green"  style="grid-area:2/14; align-self:center;"></div>
+      <div class="box green"  style="grid-area:2/15; align-self:center;"></div>
+      <div class="box green"  style="grid-area:2/16; align-self:center;"></div>
+      <div class="box pink"   style="grid-area:2/17; align-self:center;"></div>
+      <div class="box yellow" style="grid-area:2/18; align-self:center;"></div>
+
+
+      <div class="box green dark-text" style="grid-area:3/1;">12</div>
+
+      <div class="box blue" style="grid-area:3/3;"></div>
+      <div class="box blue" style="grid-area:3/4;"></div>
+      <div class="box blue" style="grid-area:3/5;"></div>
+      <div class="box blue" style="grid-area:3/6;"></div>
+      <div class="box blue" style="grid-area:3/7;"></div>
+      <div class="box blue" style="grid-area:3/8;"></div>
+      <div class="box blue" style="grid-area:3/9;"></div>
+      <div class="box blue" style="grid-area:3/10;"></div>
+      <div class="box blue" style="grid-area:3/11;"></div>
+      <div class="box blue" style="grid-area:3/12;"></div>
+
+      <div class="box orange" style="grid-area:3/13;"></div>
+      <div class="box purple" style="grid-area:3/14;"></div>
+      <div class="box green"  style="grid-area:3/15;"></div>
+      <div class="box green"  style="grid-area:3/16;"></div>
+      <div class="box pink"   style="grid-area:3/17;"></div>
+      <div class="box yellow" style="grid-area:3/18;"></div>
+
+
+      <div class="box green dark-text" style="grid-area:4/1;">20</div>
+
+      <div class="box blue" style="grid-area:4/3;"></div>
+      <div class="box blue" style="grid-area:4/4;"></div>
+      <div class="box blue" style="grid-area:4/5;"></div>
+      <div class="box blue" style="grid-area:4/6;"></div>
+      <div class="box blue" style="grid-area:4/7;"></div>
+      <div class="box blue" style="grid-area:4/8;"></div>
+      <div class="box blue" style="grid-area:4/9;"></div>
+      <div class="box blue" style="grid-area:4/10;"></div>
+      <div class="box blue" style="grid-area:4/11;"></div>
+      <div class="box blue" style="grid-area:4/12;"></div>
+
+      <div class="box orange" style="grid-area:4/13;"></div>
+      <div class="box orange" style="grid-area:4/14;"></div>
+      <div class="box purple" style="grid-area:4/15;"></div>
+      <div class="box green"  style="grid-area:4/16;"></div>
+      <div class="box pink"   style="grid-area:4/17;"></div>
+      <div class="box yellow" style="grid-area:4/18;"></div>
+
+
+      <div class="box green dark-text" style="grid-area:5/1;">38</div>
+
+      <div class="box blue" style="grid-area:5/3;"></div>
+      <div class="box blue" style="grid-area:5/4;"></div>
+      <div class="box blue" style="grid-area:5/5;"></div>
+      <div class="box blue" style="grid-area:5/6;"></div>
+      <div class="box blue" style="grid-area:5/7;"></div>
+      <div class="box blue" style="grid-area:5/8;"></div>
+      <div class="box blue" style="grid-area:5/9;"></div>
+      <div class="box blue" style="grid-area:5/10;"></div>
+      <div class="box blue" style="grid-area:5/11;"></div>
+      <div class="box blue" style="grid-area:5/12;"></div>
+
+      <div class="box orange" style="grid-area:5/13;"></div>
+      <div class="box orange" style="grid-area:5/14;"></div>
+      <div class="box purple" style="grid-area:5/15;"></div>
+      <div class="box green"  style="grid-area:5/16;"></div>
+      <div class="box pink"   style="grid-area:5/17;"></div>
+      <div class="box yellow" style="grid-area:5/18;"></div>
+
+
+      <div class="box green dark-text" style="grid-area:6/1;">56</div>
+      <div class="box cream" style="grid-area:6/2;"></div>
+
+      <div class="box blue" style="grid-area:6/3;"></div>
+      <div class="box blue" style="grid-area:6/4;"></div>
+      <div class="box blue" style="grid-area:6/5;"></div>
+      <div class="box blue" style="grid-area:6/6;"></div>
+      <div class="box blue" style="grid-area:6/7;"></div>
+      <div class="box blue" style="grid-area:6/8;"></div>
+      <div class="box blue" style="grid-area:6/9;"></div>
+      <div class="box blue" style="grid-area:6/10;"></div>
+      <div class="box blue" style="grid-area:6/11;"></div>
+      <div class="box blue" style="grid-area:6/12;"></div>
+
+      <div class="box orange" style="grid-area:6/13;"></div>
+      <div class="box orange" style="grid-area:6/14;"></div>
+      <div class="box purple" style="grid-area:6/15;"></div>
+      <div class="box green"  style="grid-area:6/16;"></div>
+      <div class="box pink"   style="grid-area:6/17;"></div>
+      <div class="box yellow" style="grid-area:6/18;"></div>
+
+
+      <div class="box green dark-text" style="grid-area:7/1;">88</div>
+      <div class="box cream" style="grid-area:7/2;"></div>
+
+      <div class="box blue" style="grid-area:7/3;"></div>
+      <div class="box blue" style="grid-area:7/4;"></div>
+      <div class="box blue" style="grid-area:7/5;"></div>
+      <div class="box blue" style="grid-area:7/6;"></div>
+      <div class="box blue" style="grid-area:7/7;"></div>
+      <div class="box blue" style="grid-area:7/8;"></div>
+      <div class="box blue" style="grid-area:7/9;"></div>
+      <div class="box blue" style="grid-area:7/10;"></div>
+      <div class="box blue" style="grid-area:7/11;"></div>
+      <div class="box blue" style="grid-area:7/12;"></div>
+
+      <div class="box gray" style="grid-area:7/13;"></div>
+      <div class="box gray" style="grid-area:7/14;"></div>
+      <div class="box gray" style="grid-area:7/15;"></div>
+      <div class="box gray" style="grid-area:7/16;"></div>
+      <div class="box gray" style="grid-area:7/17;"></div>
+      <div class="box gray" style="grid-area:7/18;"></div>
+
+    </div>
+
+
+    <div class="fblock">
+
+      <div class="frow">
+        <div class="fcell dark">La</div>
+        <div class="fcell dark"></div>
+        <div class="fcell dark"></div>
+        <div class="fcell dark"></div>
+        <div class="fcell dark"></div>
+        <div class="fcell dark"></div>
+        <div class="fcell dark"></div>
+        <div class="fcell dark"></div>
+        <div class="fcell dark"></div>
+        <div class="fcell dark"></div>
+        <div class="fcell dark"></div>
+        <div class="fcell dark"></div>
+        <div class="fcell dark"></div>
+        <div class="fcell dark"></div>
+      </div>
+
+      <div class="frow">
+        <div class="fcell light"></div>
+        <div class="fcell light"></div>
+        <div class="fcell light"></div>
+        <div class="fcell light"></div>
+        <div class="fcell light"></div>
+        <div class="fcell light"></div>
+        <div class="fcell light">Am</div>
+        <div class="fcell light"></div>
+        <div class="fcell light"></div>
+        <div class="fcell light"></div>
+        <div class="fcell light"></div>
+        <div class="fcell light"></div>
+        <div class="fcell light"></div>
+        <div class="fcell light">No</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

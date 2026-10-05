@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movie Listing Portal</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-color: white;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        #movie-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+
+        .movie-card {
+            display: flex;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 12px;
+            background-color: #fff;
+            align-items: center;
+            gap: 20px;
+        }
+
+
+        .movie-poster, .movie-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .movie-poster img {
+            width: 100px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+
+        .movie-details h3 {
+            font-size: 18px;
+            color: #222;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+
+        .movie-details p {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+
+        .book-btn {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            width: fit-content;
+        }
+
+
+        .book-btn:hover {
+            background-color: #e63956;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="movie-container">
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://i.etsystatic.com/21416102/r/il/4d0741/5429614123/il_1080xN.5429614123_a6o8.jpg" alt="ET Poster">
+            </div>
+            <div class="movie-details">
+                <h3>ET (2022)</h3>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button class="book-btn">Book tickets</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDI1YTMzNTctNGU5Yy00ZDZiLWIxOWUtMTgxYzVjZmJmMTI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Jhund Poster">
+            </div>
+            <div class="movie-details">
+                <h3>Jhund</h3>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button class="book-btn">Book tickets</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BYjliYjA0MWUtMjVkNi00MDc0LTg1MDgtYWExNGM0OWQ1NjBhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Gangubai Poster">
+            </div>
+            <div class="movie-details">
+                <h3>Gangubai Kathiawadi</h3>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button class="book-btn">Book tickets</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BNGE3MmVlYmItZjA5Ny00YzNhLTg0ZGMtNWZhMmUwNjljN2IwXkEyXkFqcGc@._V1_.jpg" alt="Radhe Shyam Poster">
+            </div>
+            <div class="movie-details">
+                <h3>Radhe Shyam</h3>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button class="book-btn">Book tickets</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://media-cache.cinematerial.com/p/500x/nlbs094c/uncharted-movie-poster.jpg?v=1676299474" alt="Uncharted Poster">
+            </div>
+            <div class="movie-details">
+                <h3>Uncharted</h3>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button class="book-btn">Book tickets</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.yYW16aTZnCoLymK_gMmS-QHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="The Batman Poster">
+            </div>
+            <div class="movie-details">
+                <h3>The Batman</h3>
+                <p>Releasing on 11 Mar, 2022</p>
+                <button class="book-btn">Book tickets</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
