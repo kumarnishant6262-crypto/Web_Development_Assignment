@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteXL Navbar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1c1c1c;
+            font-family: Arial, sans-serif;
+            padding: 40px 25px;
+        }
+
+        .navbar {
+            background-color: white;
+            width: 100%;
+        }
+
+        .top-nav {
+            height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 28px;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .logo {
+            color: #0ada5d;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .main-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .main-links a,
+        .sub-nav a {
+            text-decoration: none;
+            color: #0986f3;
+            font-size: 14px;
+        }
+
+        .main-links a {
+            font-weight: 600;
+        }
+
+        .sign-in {
+            background-color: #37a4f7;
+            color: white;
+            border: none;
+            padding: 9px 17px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .sub-nav {
+            min-height: 41px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .sub-nav a {
+            white-space: nowrap;
+        }
+
+        a:hover {
+            color: #159447;
+        }
+
+        @media (max-width: 800px) {
+            .top-nav {
+                height: auto;
+                min-height: 75px;
+                flex-wrap: wrap;
+                gap: 15px;
+                padding: 18px;
+            }
+
+            .main-links {
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+
+            .sub-nav {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="top-nav">
+
+            <div class="logo">ByteXL</div>
+
+            <div class="main-links">
+                <a href="#">Courses</a>
+                <a href="#">Tutorials</a>
+                <a href="#">Practice</a>
+                <a href="#">Jobs</a> 
+            </div>
+
+            <button class="sign-in">Sign In</button>
+
+        </div>
+
+        <div class="sub-nav">
+            <a href="#">DSA</a>
+            <a href="#">Practice Problems</a>
+            <a href="#">C</a>
+            <a href="#">C++</a>
+            <a href="#">Java</a>
+            <a href="#">Python</a>
+            <a href="#">JavaScript</a>
+            <a href="#">Data Science</a>
+            <a href="#">Machine Learning</a>
+            <a href="#">Courses</a>
+            <a href="#">Linux</a>
+            <a href="#">DevOps</a>
+        </div>
+    </nav>
+
+</body>
+</html>
